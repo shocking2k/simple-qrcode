@@ -194,7 +194,7 @@ class Generator
      * @param string $filepath
      * @param float $percentage
      * @param SimpleSoftwareIO\QrCode\boolean|bool $absolute
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      */
     public function merge(string $filepath, float $percentage = .2, bool $absolute = false): self
     {
@@ -213,7 +213,7 @@ class Generator
      *
      * @param string  $content
      * @param float $percentage
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      */
     public function mergeString(string $content, float $percentage = .2): self
     {
@@ -227,7 +227,7 @@ class Generator
      * Sets the size of the QrCode.
      *
      * @param int $pixels
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      */
     public function size(int $pixels): self
     {
@@ -240,7 +240,7 @@ class Generator
      * Sets the format of the QrCode.
      *
      * @param string $format
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      * @throws InvalidArgumentException
      */
     public function format(string $format): self
@@ -261,7 +261,7 @@ class Generator
      * @param int $green
      * @param int $blue
      * @param null|int $alpha
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      */
     public function color(int $red, int $green, int $blue, ?int $alpha = null): self
     {
@@ -277,7 +277,7 @@ class Generator
      * @param int $green
      * @param int $blue
      * @param null|int $alpha
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      */
     public function backgroundColor(int $red, int $green, int $blue, ?int $alpha = null): self
     {
@@ -296,7 +296,7 @@ class Generator
      * @param int $outterRed
      * @param int $outterGreen
      * @param int $outterBlue
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      * @throws InvalidArgumentException
      */
     public function eyeColor(int $eyeNumber, int $innerRed, int $innerGreen, int $innerBlue, int $outterRed = 0, int $outterGreen = 0, int $outterBlue = 0): self
@@ -329,7 +329,7 @@ class Generator
      * Sets the eye style.
      *
      * @param string $style
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      * @throws InvalidArgumentException
      */
     public function eye(string $style): self
@@ -348,7 +348,7 @@ class Generator
      *
      * @param string $style
      * @param float $size
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      * @throws InvalidArgumentException
      */
     public function style(string $style, float $size = 0.5): self
@@ -377,7 +377,7 @@ class Generator
      * UTF-16BE, UTF-8, ASCII, GBK, EUC-KR.
      *
      * @param string $encoding
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      */
     public function encoding(string $encoding): self
     {
@@ -394,7 +394,7 @@ class Generator
      * H: 30% loss.
      *
      * @param string $errorCorrection
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      */
     public function errorCorrection(string $errorCorrection): self
     {
@@ -408,7 +408,7 @@ class Generator
      * Sets the margin of the QrCode.
      *
      * @param int $margin
-     * @return Generator
+     * @return SimpleSoftwareIO\QrCode\Generator
      */
     public function margin(int $margin): self
     {
